@@ -1,0 +1,35 @@
+.our-clients {
+  width: 1170px;
+
+  .our-clients__heading {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .our-clients__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .our-clients__icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $colorClients;
+    border-radius: 4px;
+    fill: $colorClients;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorBackground;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      fill: $colorAccent;
+      border: 1px solid $colorAccent;
+    }
+  }
+}

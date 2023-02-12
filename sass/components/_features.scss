@@ -1,0 +1,45 @@
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  .features__wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .features__display {
+    flex-basis: calc((100% - 20px) / 4);
+    padding: 0;
+  }
+
+  .features__icon {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $ColorPortfolioButton;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $colorMain;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .features__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $colorLessITex;
+    letter-spacing: 0.03em;
+    flex-wrap: wrap;
+  }
+}

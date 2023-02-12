@@ -1,0 +1,15 @@
+.socials-icon {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: $colorBackground;
+  fill: $colorClients;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: $colorBackground;
+    background-color: $colorAccent;
+  }
+}

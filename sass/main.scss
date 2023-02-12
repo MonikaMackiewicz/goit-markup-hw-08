@@ -1,0 +1,94 @@
+@use "./utils/vars" as *;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $colorMain;
+  background: $colorBackground;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:visited {
+    color: $colorLessITex;
+  }
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
+}
+
+.is-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hide {
+  display: none;
+}
+
+.foto {
+  display: block;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.h3-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $colorBackground;
+}
+
+.h2-heading {
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: $colorMain;
+}
+
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/order";
+@import "./components/features";
+@import "./components/offer";
+@import "./components/our-team";
+@import "./components/socials-icon";
+@import "./components/our-clients";
+@import "./components/footer";
+@import "./components/logo";
+@import "./components/newsletter";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/policy";
+@import "./components/filters";
+@import "./components/projects";

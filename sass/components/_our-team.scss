@@ -1,0 +1,64 @@
+.our-team {
+  background: var($ColorPortfolioButton);
+
+  .our-team__heading {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .our-team__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .our-team__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 0;
+  }
+
+  .our-team__card {
+    background: $colorBackground;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    position: relative;
+  }
+
+  .our-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $colorMain;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .our-team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    color: $colorLessITex;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .our-team__icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 30px 30px 30px;
+  }
+
+  .our-team__socials-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

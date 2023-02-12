@@ -1,0 +1,64 @@
+.policy {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: baseline;
+
+  .policy__label {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .policy__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $colorLessITex;
+    margin-top: -8px;
+    margin-left: 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    & > a {
+      color: $colorAccent;
+    }
+
+    &:hover,
+    &:focus {
+      stroke: $colorAccent;
+      cursor: pointer;
+    }
+  }
+
+  .policy__window {
+    position: absolute;
+    bottom: 127px;
+    left: 40px;
+    height: 16px;
+    width: 15px;
+    visibility: hidden;
+
+    &:checked + span svg {
+      background-color: $colorAccent;
+      border-radius: 4px;
+      width: 15px;
+      height: 16px;
+      border: 2px solid $colorAccent;
+    }
+  }
+
+  .policy__icon {
+    background-color: $colorBackground;
+    border-radius: 4px;
+    width: 15px;
+    height: 16px;
+    border: 2px solid $colorMain;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
