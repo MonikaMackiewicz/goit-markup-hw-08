@@ -33,8 +33,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 ul {
@@ -50,12 +57,24 @@ ul {
 }
 
 .container {
-  box-sizing: border-box;
-  max-width: 1200px;
-  padding: 0 15px;
-  display: flex;
+  max-width: 479px;
   width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 767px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .h3-title {

@@ -1,8 +1,5 @@
 .menu-nav {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   .menu-nav__wrapper {
     display: flex;
@@ -15,26 +12,10 @@
 
   .menu-nav__logo {
     color: $colorMain;
-    margin-right: 93px;
   }
 
   .menu-nav__links {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    flex-grow: 0;
-
-    &--primary {
-      gap: 46px;
-      flex-grow: 3;
-      justify-content: flex-start;
-    }
-
-    &--secondary {
-      gap: 50px;
-      flex-grow: 0;
-      justify-content: flex-end;
-    }
+    display: none;
   }
 
   .menu-nav__link {
@@ -73,5 +54,41 @@
       bottom: -28px;
       left: 0;
     }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .menu-nav {
+    max-width: 767px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-nav__logo {
+    margin-right: 93px;
+  }
+  .menu-nav__links {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex-grow: 0;
+
+    &--primary {
+      gap: 46px;
+      flex-grow: 3;
+      justify-content: flex-start;
+    }
+
+    &--secondary {
+      gap: 50px;
+      flex-grow: 0;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    max-width: 1200px;
   }
 }

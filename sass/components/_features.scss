@@ -1,19 +1,6 @@
 .features {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  .features__wrapper {
-    display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .features__display {
-    flex-basis: calc((100% - 20px) / 4);
-    padding: 0;
-  }
+  flex-direction: column;
 
   .features__icon {
     padding-top: 25px;
@@ -41,5 +28,29 @@
     color: $colorLessITex;
     letter-spacing: 0.03em;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .features__display {
+    flex-basis: calc((100% - 15px) / 2);
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .features__display {
+    flex-basis: calc((100% - 20px) / 4);
+    padding: 0;
   }
 }

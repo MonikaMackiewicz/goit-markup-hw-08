@@ -13,8 +13,8 @@
   .policy__text {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $colorLessITex;
     margin-top: -8px;
@@ -60,5 +60,12 @@
     border: 2px solid $colorMain;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .policy__text {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
