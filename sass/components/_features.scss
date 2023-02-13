@@ -1,6 +1,6 @@
 .features {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 
   .features__icon {
     padding-top: 25px;
@@ -20,6 +20,7 @@
     color: $colorMain;
     padding-bottom: 10px;
     padding-top: 30px;
+    text-align: center;
   }
 
   .features__text {
@@ -28,17 +29,21 @@
     color: $colorLessITex;
     letter-spacing: 0.03em;
     flex-wrap: wrap;
+    padding-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .features {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
   .features__display {
-    flex-basis: calc((100% - 15px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
     padding: 0;
+  }
+  .features__wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -51,6 +56,6 @@
   }
   .features__display {
     flex-basis: calc((100% - 20px) / 4);
-    padding: 0;
+    flex-direction: row;
   }
 }
