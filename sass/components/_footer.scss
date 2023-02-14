@@ -11,10 +11,7 @@
   .footer__logo {
     color: $colorBackground;
     padding-bottom: 20px;
-
-    &--margin {
-      margin-right: 93px;
-    }
+    text-align: center;
   }
 
   .footer__address {
@@ -66,4 +63,12 @@
 .footer__address > ul {
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    &--margin {
+      margin-right: 93px;
+    }
+  }
 }

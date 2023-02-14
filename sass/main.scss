@@ -52,6 +52,12 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
 .foto {
   display: block;
 }
@@ -89,10 +95,18 @@ ul {
 }
 
 .h2-heading {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   font-weight: 700;
   color: $colorMain;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .h2-heading {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 @import "./components/header";

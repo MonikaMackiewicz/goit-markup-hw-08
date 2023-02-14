@@ -1,20 +1,24 @@
 .our-clients {
-  width: 1170px;
+  width: 480px;
 
   .our-clients__heading {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
   }
 
   .our-clients__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    flex-basis: calc((100% - 30px) / 2);
+    flex-wrap: wrap;
   }
 
   .our-clients__icon {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $colorClients;
     border-radius: 4px;
@@ -31,5 +35,28 @@
       fill: $colorAccent;
       border: 1px solid $colorAccent;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients {
+    width: 1170px;
+  }
+
+  .our-clients__heading {
+    padding-bottom: 50px;
+  }
+  .our-clients__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: no-wrap;
+  }
+  .our-clients__icon {
+    width: 170px;
+    height: 92px;
   }
 }
